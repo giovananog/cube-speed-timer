@@ -1,8 +1,10 @@
 import { React } from "react";
 import Header from "./Header";
 import Footer from "./Footer";
-import Button from "./Button";
+import DisableElevation from "./Button";
 import Timer from "./Timer";
+// import { List } from "./List";
+import GutterlessList from "./List"
 
 function App() {
   return (
@@ -11,9 +13,13 @@ function App() {
       <Timer />
       <div className="buttons-div">
 
-        <Button text='start (space)'/>
-        <Button text='stop (any button)'/>
+        <DisableElevation text='start (space)'/>
+        <DisableElevation text='stop (any button)'/>
 
+      </div>
+
+      <div className="list-div">
+        <GutterlessList />
       </div>
       <Footer />
     </div>

@@ -5,7 +5,7 @@ export default function DisableElevation(props) {
   return (
     <div className='button-div'>
 
-    <Button variant="contained" disableElevation className='start-button'>
+    <Button variant="contained" disableElevation className='button'>
       {props.text}
     </Button>
 
