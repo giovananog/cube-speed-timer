@@ -3,7 +3,6 @@ import Header from "./Header";
 import Footer from "./Footer";
 import DisableElevation from "./Button";
 import Timer from "./Timer";
-// import { List } from "./List";
 import GutterlessList from "./List"
 
 function App() {
@@ -14,7 +13,7 @@ function App() {
       <div className="buttons-div">
 
         <DisableElevation text='start (space)'/>
-        <DisableElevation text='stop (any button)'/>
+        <DisableElevation text='stop (any key)'/>
 
       </div>
 

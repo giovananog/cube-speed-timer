@@ -5,7 +5,7 @@ function Timer() {
     <div className="timer-div">
 
     <div className="time-div">
-      <h1>00:00</h1>
+      <h1>00:00:00</h1>
     </div>
 
     </div>
