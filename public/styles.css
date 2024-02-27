@@ -44,3 +44,16 @@ footer p {
     height: 40%;
     font-size: 80px;
 }
+
+.button-div {
+  margin-top: 3%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2%;
+}
+
+.buttons-div {
+  display: flex;
+  justify-content: center;
+}
