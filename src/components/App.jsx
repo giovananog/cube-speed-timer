@@ -11,18 +11,11 @@ function App() {
     <div>  
       <Header />
       <Timer />
-      <div className="buttons-div">
-
-        <DisableElevation text='start (space)'/>
-        <DisableElevation text='stop (any key)'/>
-
-      </div>
 
       <div className="list-div">
         <GutterlessList />
       </div>
-
-      
+   
       <BasicSpeedDial />
       <Footer />
     </div>

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import DisableElevation from "./Button";
 
 const Timer = () => {
   const [startTime, setStartTime] = useState(null);
@@ -28,13 +29,30 @@ const Timer = () => {
     setIsRunning(false);
   };
 
-  const formatNumber = (numero) => {
-    return numero < 10 ? "0" + numero : numero;
+  const formatNumber = (number) => {
+    return number < 10 ? "0" + number : number;
   };
 
-  const saveData = () => {
-    // Adicione sua lógica de salvamento de dados aqui
-  };
+  // const saveData = () => {
+  //   fetch('../../public/data.json', {
+  //     method: 'POST', 
+  //     headers: {
+  //       'Content-Type': 'application/json',
+  //     },
+  //     body: JSON.stringify(),
+  //   })
+  //   .then(response => {
+  //     if (!response.ok) {
+  //       throw new Error(`Network error: ${response.statusText}`);
+  //     }
+  //     return response.json();
+  //   })
+  //   .then(data => {
+  //     console.log(data);
+  //   })
+  //   .catch(error => console.error('Save error', error));
+  // };
+  
 
   useEffect(() => {
     const handleKeyDown = (e) => {
@@ -42,7 +60,7 @@ const Timer = () => {
         start();
       } else {
         stop();
-        saveData();
+        // saveData();
       }
     };
 
@@ -51,17 +69,27 @@ const Timer = () => {
     return () => {
       document.removeEventListener('keydown', handleKeyDown);
     };
-  }, [isRunning]);
+  }, [isRunning, start]);
 
   const minutes = formatNumber(Math.floor(elapsedTime / 60000));
   const seconds = formatNumber(Math.floor((elapsedTime % 60000) / 1000));
   const ms = formatNumber(elapsedTime % 1000);
 
   return (
+    <div>
+
     <div className="timer-div">
       <div className="time-div">
         <h1>{minutes}:{seconds}:{ms}</h1>
       </div>
+    </div>
+    <div className="buttons-div">
+
+        <DisableElevation text='start (space)'/>
+        <DisableElevation text='stop (any key)'/>
+
+      </div>
+
     </div>
   );
 };
