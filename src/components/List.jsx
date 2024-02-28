@@ -2,8 +2,8 @@ import * as React from 'react';
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 import ListItemText from '@mui/material/ListItemText';
-import CommentIcon from '@mui/icons-material/Comment';
 import IconButton from '@mui/material/IconButton';
+import AccessTimeIcon from '@mui/icons-material/AccessTime';
 
 export default function GutterlessList() {
   return (
@@ -14,7 +14,7 @@ export default function GutterlessList() {
           disableGutters
           secondaryAction={
             <IconButton aria-label="comment">
-              <CommentIcon />
+              <AccessTimeIcon />
             </IconButton>
           }
         >

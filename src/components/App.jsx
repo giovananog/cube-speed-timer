@@ -4,6 +4,7 @@ import Footer from "./Footer";
 import DisableElevation from "./Button";
 import Timer from "./Timer";
 import GutterlessList from "./List"
+import BasicSpeedDial from "./FloatButton";
 
 function App() {
   return (
@@ -20,6 +21,9 @@ function App() {
       <div className="list-div">
         <GutterlessList />
       </div>
+
+      
+      <BasicSpeedDial />
       <Footer />
     </div>
   );
