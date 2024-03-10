@@ -4,7 +4,7 @@ The Speed Cube Timer is a simple application to measure the time spent solving t
 
 
 ## User interface
-    ![Cube Speed Timer](public/image.png)
+![Cube Speed Timer](/public/image.png)
 
 ## Features
 
@@ -20,9 +20,9 @@ The Speed Cube Timer is a simple application to measure the time spent solving t
    ```bash
    git clone https://github.com/giovananog/cube-speed-timer.git
    cd speed-cube-timer
-  ```
+   ```
 
-2. Install dependencies
+2. Install dependencies:
    ```bash
    npm install
    ```
