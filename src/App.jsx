@@ -3,7 +3,7 @@ import Header from "./components/general/Header";
 import Footer from "./components/general/Footer";
 import Timer from "./components/Timer";
 import GutterlessList from "./components/List"
-import BasicSpeedDial from "./components/FloatButton";
+// import BasicSpeedDial from "./components/FloatButton";
 
 function App() {
   return (
@@ -15,7 +15,7 @@ function App() {
         <GutterlessList />
       </div>
    
-      <BasicSpeedDial />
+      {/* <BasicSpeedDial /> */}
       <Footer />
     </div>
   );

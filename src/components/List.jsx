@@ -6,7 +6,7 @@ import IconButton from '@mui/material/IconButton';
 import AccessTimeIcon from '@mui/icons-material/AccessTime';
 
 export default function GutterlessList() {
-  const [timerData, setTimerData] = React.useState(JSON.parse(localStorage.getItem("timerData")) || []);
+  const [timerData, setTimerData] = React.useState([]);
 
   const convertToSeconds = (timeString) => {
     const [hours, minutes, seconds] = timeString.split(':').map(Number);

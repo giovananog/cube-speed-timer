@@ -5,7 +5,7 @@ const Timer = () => {
   const [startTime, setStartTime] = useState(null);
   const [isRunning, setIsRunning] = useState(false);
   const [formattedTime, setFormattedTime] = useState('00:00:00');
-  const [timeData, setTimeData] = useState(JSON.parse(localStorage.getItem("timerData")) || []);
+  const [timeData, setTimeData] = useState([]);
 
 
   const formatNumber = (number) => {
