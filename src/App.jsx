@@ -1,10 +1,9 @@
 import { React } from "react";
-import Header from "./Header";
-import Footer from "./Footer";
-import DisableElevation from "./Button";
-import Timer from "./Timer";
-import GutterlessList from "./List"
-import BasicSpeedDial from "./FloatButton";
+import Header from "./components/general/Header";
+import Footer from "./components/general/Footer";
+import Timer from "./components/Timer";
+import GutterlessList from "./components/List"
+import BasicSpeedDial from "./components/FloatButton";
 
 function App() {
   return (
